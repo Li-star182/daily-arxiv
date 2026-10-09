@@ -3,28 +3,35 @@
 # 应用配置 / App settings
 app:
   # 部署语言 / Deployment language: zh 或 en
-  language: "en"
+  language: "zh"
 
 # arXiv 搜索配置 / arXiv search settings
 arxiv:
-  # 研究领域类别（可以是多个）/ Research categories (multiple allowed)
-  # 常见类别 / Common categories: cs.AI, cs.LG, cs.CV, cs.CL, cs.NE, stat.ML
   categories:
-    # - "math.NA"  # Numerical Analysis
-    - "cs.LG"  # Machine Learning
-  
-  # 关键词过滤（可选，为空则不过滤）/ Keyword filter (optional, empty means no filtering)
+    - "astro-ph.HE"   # 高能天体物理 (Gamma ray astronomy and bursts, Cosmic ray, etc.)
+    - "astro-ph.IM"   # 天体物理仪器与方法 (探测器技术、数据分析方法等)
+    - "hep-ex"        # 高能物理实验 (部分探测器相关论文)
   keywords:
-    - "large language model"
-    - "LLM"
-    - "transformer"
-    - "agent"
-  
-  # 每天获取的最大论文数量 / Maximum papers fetched per day
-  max_results: 10
+    # --- 实验项目 ---
+    - "Tibet ASgamma"     # 西藏羊八井 ASγ 实验
+    - "LHAASO"            # 高海拔宇宙线观测站
+    - "ALPACA"            # 南半球伽马天文项目
+    - "HWAC"               # 高海拔水切连科夫天文台
+    - "Fermi-LAT"         # 费米大面积太空望远镜
+    - "HESS"              #立体切轮科夫望远镜阵列
+    # --- 科学主题 ---
+    - "GRB"               # 伽马射线暴简称
+    - "PeVatron"          # PeV 能量加速器
+    - "cosmic ray"        # 宇宙线
+    - "pulsar wind nebula" # 脉冲星风云
+    - "active galactic nucleus" # 活动星系核
+    - "diffuse gamma-ray" # 弥散伽马射线
+    # --- 方法 ---
+    - "air shower"         # 空气簇射
+  max_results: 20       # 每日最大论文数，可按需调整
   
   # 排序方式 / Sort by: submittedDate (提交日期) 或 relevance (相关性)
-  sort_by: "submittedDate"
+  sort_by: "relevance"
   
   # 排序顺序 / Sort order: descending 或 ascending
   sort_order: "descending"
@@ -87,7 +94,7 @@ scheduler:
   enabled: true
   
   # 运行时间（24小时制，HH:MM 格式）/ Run time (24-hour format, HH:MM)
-  run_time: "09:00"
+  run_time: "03:00"
   
   # 时区 / Timezone
   timezone: "Asia/Shanghai"
