@@ -8,13 +8,11 @@ app:
 # arXiv 搜索配置 / arXiv search settings
 arxiv:
   categories:
-    - "astro-ph.HE"   # 高能天体物理 (Gamma ray astronomy and bursts, Cosmic ray, etc.)
-    - "astro-ph.IM"   # 天体物理仪器与方法 (探测器技术、数据分析方法等)
-    - "hep-ex"        # 高能物理实验 (部分探测器相关论文)
-    
-  keywords:[]   # 留空，不再用关键词过滤，直接抓取整个分类的最新论文
-  
-  max_results: 20       # 每日最大论文数，可按需调整
+    - "astro-ph.HE"
+    - "astro-ph.IM"
+    - "hep-ex"
+  keywords: []  # 这里为空列表
+  max_results: 25
   
   # 排序方式 / Sort by: submittedDate (提交日期) 或 relevance (相关性)
   sort_by: "relevance"
