@@ -11,18 +11,9 @@ arxiv:
     - "astro-ph.HE"   # 高能天体物理 (Gamma ray astronomy and bursts, Cosmic ray, etc.)
     - "astro-ph.IM"   # 天体物理仪器与方法 (探测器技术、数据分析方法等)
     - "hep-ex"        # 高能物理实验 (部分探测器相关论文)
-  keywords:
-    # --- 宽泛核心词（保证每天有基本产出） ---
-    - "gamma-ray"         # 伽马射线（最通用的核心词）
-    - "cosmic ray"        # 宇宙线
-    - "GRB"               # 伽马射线暴
-    # --- 重点实验项目（高频出现，确保覆盖核心方向） ---
-    - "LHAASO"            # 高海拔宇宙线观测站（当前发文量很大）
-    - "Fermi-LAT"         # 费米望远镜（经典且高频）
-    - "H.E.S.S."          # 切伦科夫望远镜（注意这里加了点，匹配更准）
-    # --- 前沿方向 ---
-    - "PeVatron"          # PeV 能量加速器
-    - "air shower"         # 空气簇射
+    
+  keywords:[]   # 留空，不再用关键词过滤，直接抓取整个分类的最新论文
+  
   max_results: 20       # 每日最大论文数，可按需调整
   
   # 排序方式 / Sort by: submittedDate (提交日期) 或 relevance (相关性)
