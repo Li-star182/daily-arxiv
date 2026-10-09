@@ -19,15 +19,6 @@ arxiv:
     - "HWAC"               # 高海拔水切连科夫天文台
     - "Fermi-LAT"         # 费米大面积太空望远镜
     - "HESS"              #立体切轮科夫望远镜阵列
-    # --- 科学主题 ---
-    - "GRB"               # 伽马射线暴简称
-    - "PeVatron"          # PeV 能量加速器
-    - "cosmic ray"        # 宇宙线
-    - "pulsar wind nebula" # 脉冲星风云
-    - "active galactic nucleus" # 活动星系核
-    - "diffuse gamma-ray" # 弥散伽马射线
-    # --- 方法 ---
-    - "air shower"         # 空气簇射
   max_results: 20       # 每日最大论文数，可按需调整
   
   # 排序方式 / Sort by: submittedDate (提交日期) 或 relevance (相关性)
